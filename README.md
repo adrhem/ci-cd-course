@@ -1,19 +1,20 @@
 
 
-# Curso Pruebas Automatizadas. CI / CD
+# Curso Pruebas Automatizadas CI / CD
 El objetivo del curso es que el alumno se familiarize con el concepto de __deployment__ además con todo el proceso que conlleva a este; y como el uso de herramientas automatizadas lo agiliza y previene los errores más comunes.
 
-- [Curso Pruebas Automatizadas. CI / CD](#curso-pruebas-automatizadas-ci--cd)
+- [Curso Pruebas Automatizadas CI / CD](#curso-pruebas-automatizadas-ci--cd)
   - [Conceptos Básicos](#conceptos-b%c3%a1sicos)
     - [Git](#git)
     - [Python](#python)
     - [Flask](#flask)
+    - [PIP](#pip)
+    - [Virtual Env (VENV)](#virtual-env-venv)
     - [Prueba automatizada](#prueba-automatizada)
     - [Continous Integration (CI)](#continous-integration-ci)
     - [Continuous Delivery](#continuous-delivery)
     - [Continuous Deployment (CD)](#continuous-deployment-cd)
     - [Continuous Delivery vs Continuous Deployment](#continuous-delivery-vs-continuous-deployment)
-    - [PIP](#pip)
   - [Heroku](#heroku)
   - [Contacto](#contacto)
 
@@ -26,6 +27,12 @@ Python es un lenguaje de sintaxis simple, multiparadigma y fácil de entender. [
 
 ### Flask
 Es un microframework para web escrito en Python. Es simple y versatil. [Sitio oficial](https://palletsprojects.com/p/flask/) 
+
+### PIP
+Es un __Package Installer__ de python que permite gestionar los paquetes usados en un proyecto con python.
+
+### Virtual Env (VENV)
+Debido a que PIP instala paquetes de manera global, es complicado dejar un ambiente limpio y saber qué dependencias estás usando realmente. **VENV** permite crear ambientes por separado y controlar los recursos en cada uno de ellos.
 
 ### Prueba automatizada
 Es un tipo de prueba hecha por el programador usando una herramienta para automatizar el proceso.
@@ -43,9 +50,6 @@ El concepto de __Continous Deployment__ es una versión mejorada de __Continuous
 <img src="https://puppet.com/sites/default/files/2016-09/puppet_continuous_diagram.gif" alt="continuos delivery vs continous development" />
 
 [Referencia](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
-
-### PIP
-Es un __Package Installer__ de python que permite gestionar los paquetes usados en un proyecto con python.
 
 ## Heroku
 Extraido de tu [sitio web](https://www.heroku.com/what), es una plataforma en la nube que permite a las compañías compilar, lanzar, monitorear y escalar una aplicación.
