@@ -1,2 +1,2 @@
 ## Instalar Flask
-Descargarlo de la [página oficial](https://flask.palletsprojects.com/en/1.1.x/installation/) y seguir las instrucciones por plataforma. En esa misma página están las instrucciones para virtual env.
+Descargarlo de la [página oficial](https://flask.palletsprojects.com/en/1.1.x/installation/) y seguir las instrucciones por plataforma. En esa misma página están las instrucciones para virtual env. Para instalarlo `pip install virtualenv`
