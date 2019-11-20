@@ -13,6 +13,8 @@ El objetivo del curso es que el alumno se familiarize con el concepto de __deplo
     - [Continuous Delivery](#continuous-delivery)
     - [Continuous Deployment (CD)](#continuous-deployment-cd)
     - [Continuous Delivery vs Continuous Deployment](#continuous-delivery-vs-continuous-deployment)
+    - [PIP](#pip)
+  - [Heroku](#heroku)
   - [Contacto](#contacto)
 
 ## Conceptos Básicos
@@ -41,6 +43,12 @@ El concepto de __Continous Deployment__ es una versión mejorada de __Continuous
 <img src="https://puppet.com/sites/default/files/2016-09/puppet_continuous_diagram.gif" alt="continuos delivery vs continous development" />
 
 [Referencia](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
+
+### PIP
+Es un __Package Installer__ de python que permite gestionar los paquetes usados en un proyecto con python.
+
+## Heroku
+Extraido de tu [sitio web](https://www.heroku.com/what), es una plataforma en la nube que permite a las compañías compilar, lanzar, monitorear y escalar una aplicación.
 
 ## Contacto
 Pueden escribirme sus dudas a mi telegram: [t.me/adrian_otter](https://t.me/adrian_otter).
