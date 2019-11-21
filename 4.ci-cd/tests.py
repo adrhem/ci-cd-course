@@ -1,36 +1,25 @@
-import unittest
-import flask_testing
-from urllib import request
 from flask import Flask
+from flask_testing import TestCase
+from app import app
+import unittest
 import json
-from flask_testing import LiveServerTestCase
 
-class Livetest(LiveServerTestCase):
+class MyTest(TestCase):
 
-    def create_app(self):
-        app = Flask(__name__)
-        app.config['LIVESERVER_PORT'] = 8000
-        app.config['LIVESERVER_TIMEOUT'] = 10
+    def create_app(self):   
         return app
 
-    def test_server_is_up_and_running(self):
-        with request.urlopen(self.get_server_url()) as response:
-            self.assertEqual(response.getcode(), 200)
-
     def test_hello_world(self):
-        with request.urlopen("%s" % self.get_server_url()) as response:
-            json_response = json.loads(response.read().decode(response.info().get_param('charset') or 'utf-8'))
-            self.assertEqual(json_response, dict(status=True, message = "Hello, World!"))
+        response = self.client.get("/")
+        self.assertEqual(response.json, dict(status=True, message = "Hello, World!"))
     
     def test_factorial_1_equal_1(self):
-        with request.urlopen("%s/factorial?n=1" % self.get_server_url()) as response:
-            json_response = json.loads(response.read().decode(response.info().get_param('charset') or 'utf-8'))
-            self.assertEqual(json_response, dict(status=True, result = 1, message = "OK"))
+        response = self.client.get("/factorial?n=1")
+        self.assertEqual(response.json, dict(status=True, result = 1, message = "OK"))
     
     def test_factorial_5_equal_120(self):
-        with request.urlopen("%s/factorial?n=5" % self.get_server_url()) as response:
-            json_response = json.loads(response.read().decode(response.info().get_param('charset') or 'utf-8'))
-            self.assertEqual(json_response, dict(status=True, result = 120, message = "OK"))
+        response = self.client.get("/factorial?n=5")
+        self.assertEqual(response.json, dict(status=True, result = 120, message = "OK"))
             
 if __name__ == '__main__':
     unittest.main()
