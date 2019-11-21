@@ -9,8 +9,7 @@ class Livetest(LiveServerTestCase):
 
     def create_app(self):
         app = Flask(__name__)
-        app.config['TESTING'] = True
-        app.config['LIVESERVER_PORT'] = 5000
+        app.config['LIVESERVER_PORT'] = 8000
         app.config['LIVESERVER_TIMEOUT'] = 10
         return app
 
